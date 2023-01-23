@@ -14,6 +14,7 @@
     --blue-primary:#3E86F5;
     --white-primary:#FFFFFF;
     --black-primary:#000000;
+    --light-blue:rgba(62, 134, 245, 0.2);
 }
 .container{
     max-width: 1200px;
@@ -25,6 +26,11 @@ html,body{
 
 body{
     background: #f4f4f4;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
 }
 
 .dividesinhalf {
@@ -269,6 +275,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .landing  header {
     padding: 20px 0;
 }
@@ -293,6 +300,7 @@ h5 {
     padding: 10px 25px;
     border-radius: 10px;
 }
+
 .landing .text{
     display: flex;
     height: 100%;
@@ -312,6 +320,83 @@ h5 {
 .landing .text p.explore{
     font-size:24px;
     line-height: 48px;
+}
+
+ .search-panel{
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: -129px;
+}
+
+ .search-panel h3{
+    color: var(--black-primary);
+}
+ .search-panel img{
+    width: 25px;
+    height: 25px;
+}
+ .search-panel .s-top{
+    background-color: var(--white-primary);
+    margin-bottom: -4px;
+    border-radius: 41px 41px 0 0;
+    width: max-content;
+    height: 135px;
+    padding: 30px 20px;
+}
+ .search-panel .s-top span{
+    color: var(--black-primary);
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 28px;
+}
+ .search-panel .s-top span.selected{
+    background-color: var(--light-blue);
+}
+.search-panel .s-top span img{
+    vertical-align: middle;
+}
+
+
+.search-panel .s-bottom{
+    background-color: var(--white-primary);
+    border-radius: 0 41px 41px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.search-panel .s-bottom > div{
+    display: flex;
+    background-color: var(--white-primary);
+    gap: 35px;
+    border-radius: 41px;
+    border: 1px grey solid;
+    padding: 30px 20px;
+    width: max-content;
+    align-items: center;
+}
+
+ .search-panel .s-bottom .center .return img{
+ transform: rotate(180deg);
+}
+
+ .search-panel .s-bottom .search{
+    padding: 8px 50px;
+    color: var(--white-primary);
+    font-size: 77px;
+    background: rgba(62, 134, 245, 0.8);
+    border-radius: 60px;
+    position: relative;
+}
+.search-panel .s-bottom .search::after{
+    position: absolute;
+    content: '!';
+    top: 54%;
+    font-weight: bold;
+    right: 49px;
+    font-size: 32px;
+    transform: rotate(145deg);
+    color: var(--white-primary);
 }
 /* End Landing Style */
 
