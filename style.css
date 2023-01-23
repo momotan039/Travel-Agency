@@ -1,0 +1,13 @@
+/* Start Normalization */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+/* End Normalization */
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
