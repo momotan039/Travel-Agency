@@ -2,12 +2,75 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;  
 }
 /* End Normalization */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
 
+:root{
+    --blue-primary:#3E86F5;
+    --white-primary:#FFFFFF;
+    --black-primary:#000000;
+}
+html,body{
+    font-family: 'Poppins', sans-serif;
+}
 
 .container{
     max-width: 1200px;
     margin: auto;
 }
+
+/* Start Landing Style */
+.landing{
+    height: 100vh;
+    background-image: url(asset/landing.png);
+    color: var(--white-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing  header {
+    padding: 20px 0;
+}
+.landing  header .logo{
+    font-weight: 100;
+    font-size: 48px;
+}
+.landing  header menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.landing  header menu a{
+    color: var(--white-primary);
+    margin-right: 30px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.landing  header menu a.selected{
+    color: var(--blue-primary);
+    background: var(--white-primary);
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.landing .text{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.landing .text p.discover{
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 96px;
+}
+.landing .text p.explore{
+    font-size:24px;
+    line-height: 48px;
+}
+/* End Landing Style */
