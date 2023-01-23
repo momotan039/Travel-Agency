@@ -15,7 +15,10 @@
     --white-primary:#FFFFFF;
     --black-primary:#000000;
 }
-
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 html,body{
     font-family: 'Poppins', sans-serif;
 }
@@ -23,8 +26,6 @@ html,body{
 body{
     background: #f4f4f4;
 }
-
-
 
 .dividesinhalf {
     display: flex;
